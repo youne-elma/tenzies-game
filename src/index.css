@@ -3,11 +3,89 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+/*Nav and hero styles*/
+
+.hero{
+  background-image: url("./images/blop-scene3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #632626;
+  font-size: 30px;
+  border: 1px solid blue;
+}
+
+
+/*Dies and main content*/
+.dies{
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  border: 1px solid red;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+  margin-top: 25px;
+}
+.die{
+  display: flex;
+  justify-content: center;
+  background-color: #9D5353;
+  border-radius: 15px;
+  border: 1px solid #753737;
+}
+
+.symbol{
+  align-self: center;
+  font-weight: bold;
+  color: white;
+}
+/*Button and Time*/
+
+.button-time{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  border: 1px solid blue;
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+.btn{
+  grid-column: span 2;
+  color: white;
+  background: #632626;
+  border-radius: 20px;
+  border: 3px solid #DACC96;
+  font-size: 25px;
+  height: 50px;
+  width: 150px;
+  transition: all .5s ease;
+}
+.btn:hover{
+  color: #632626;
+  background: #DACC96;
+}
+.btn:active{
+  transform: translateY(5px);
+}
+
+/*Paragraphs and timer*/
+
+.chrono {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.best-time{
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
