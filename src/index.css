@@ -3,13 +3,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    background-image: url("./images/blop-scene3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /*Nav and hero styles*/
 
 .hero{
-  background-image: url("./images/blop-scene3.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
 }
 
@@ -17,9 +17,24 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #632626;
+}
+nav > h1 {
   font-size: 30px;
-  border: 1px solid blue;
+}
+.parag{
+  margin: 0px 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px){
+  .parag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 
@@ -27,11 +42,16 @@ nav {
 .dies{
   display: grid;
   grid-template-columns: repeat(5, 50px);
-  border: 1px solid red;
   justify-content: center;
-  padding: 50px;
-  gap: 20px;
+  gap: 50px;
   margin-top: 25px;
+}
+@media screen and (max-width: 480px){
+  .dies{
+    padding: 50px;
+    gap: 25px;
+    padding-left: 9%;
+  }
 }
 .die{
   display: flex;
@@ -39,12 +59,14 @@ nav {
   background-color: #9D5353;
   border-radius: 15px;
   border: 1px solid #753737;
+  padding: 0px 30px;
 }
 
 .symbol{
   align-self: center;
   font-weight: bold;
   color: white;
+  font-size: 25px;
 }
 /*Button and Time*/
 
@@ -52,7 +74,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 30px;
-  border: 1px solid blue;
   gap: 15px;
   justify-items: center;
   align-items: center;
@@ -82,10 +103,10 @@ nav {
   color: white;
   font-weight: bold;
   font-size: 30px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 rgb(80, 76, 76), 0 1px rgb(80, 76, 76), 1px 0 rgb(80, 76, 76), 0 -1px rgb(80, 76, 76);
 }
 .best-time{
-  color: white;
+  color: rgb(233, 233, 233);
   font-weight: bold;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 rgb(80, 76, 76), 0 1px rgb(80, 76, 76), 1px 0 rgb(80, 76, 76), 0 -1px rgb(80, 76, 76);
 }
